@@ -3,7 +3,7 @@ import sys,re,urllib2,time,datetime
 #################################################################
 # File: streammaintainer.py					#
 # Author: Rommel Rico						#
-# Last Modified: 8/Sept/2012					#
+# Last Modified: 9/Sept/2012					#
 # Description: 	A small Python script that maintains 		#
 # 		a list of live TwitchTV streams on sc2mx.com.	#
 #################################################################
@@ -75,7 +75,7 @@ def maintain():
 			remove(i)
 		time.sleep(4)   #Wait a few seconds because of TwitchTV's API rate-limits.
 	
-#Returns a tuple with all the streams in sc2mx.com.
+#Returns a list with all the streams in sc2mx.com.
 def list():
 	streamList = []
 	f = open(DIR+EMBED_FILE, 'r')	#Open file.
